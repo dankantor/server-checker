@@ -13,7 +13,9 @@ It will also keep track of response times from the url. It has a chart to show y
 ![Server Checker Chart](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-20.png)
 ![Server Checker Daily Average](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-21.png)
 
-## Setup - Follow these steps:
+## Install 
+
+Follow the steps below to get it running.
 
 1. Open up [Drive](https://drive.google.com)
 
