@@ -37,9 +37,21 @@ A very simple service to check if your server is up or down and notify you.
     
     ![Server Checker Step 9](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-8.png)
     
-10. Click on 'Version' and choose the latest
+10. Click on 'Version' and choose the latest. Then click 'Save'
 
     ![Server Checker Step 10](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-9.png)
+    
+11. Click 'Run -> initialize'. This will ask for some permissions then set up the sheet.
+
+    ![Server Checker Step 11](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-10.png)
+
+12. A dialog will ask you for Authorization to run. Click 'Continue'
+
+    ![Server Checker Step 12](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-11.png)
+    
+13. Another dialog will ask you for permission to access Sheets and Email. Click 'Accept'
+
+    ![Server Checker Step 13](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-12.png)
 
 
 
