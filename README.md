@@ -1,5 +1,5 @@
 # Server Checker
-A very simple service to check if your server is up or down and notify you.
+A very simple (and free!) service to check if your server is up or down and notify you.
 
 ## Description
 
