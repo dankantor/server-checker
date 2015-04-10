@@ -1,6 +1,18 @@
 # Server Checker
 A very simple service to check if your server is up or down and notify you.
 
+## Description
+
+This is a Google Sheet script that will check a url as often as you'd like and email you if the url is not available. It is great for checking personal websites, API's or really any url you'd like to keep tabs on. 
+
+If it receives a status code back from the url that is different from the last time it checked, it will email you. A healthy url should return a status code of 200. If something goes wrong and it returns a 40x or 50x status code, it will email you. Once the server is fixed, and back to returning 200, it will email you again. It will only email you on status code changes, not every time it receives a bad status code. 
+
+It will also keep track of response times from the url. It has a chart to show you this over time as well as a daily average sheet with that data.
+
+![Server Checker Date](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-19.png)
+![Server Checker Chart](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-20.png)
+![Server Checker Daily Average](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-21.png)
+
 ## Setup - Follow these steps:
 
 1. Open up [Drive](https://drive.google.com)
@@ -69,7 +81,7 @@ A very simple service to check if your server is up or down and notify you.
 
     ![Server Checker Step 17](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-16.png)
     
-18. A dialog will open. Click 'No trigger set up. Click here to here to add on now.'
+18. A dialog will open. Click 'No triggers set up. Click here to here to add one now.'
 
     ![Server Checker Step 18](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-17.png)
     
