@@ -31,7 +31,7 @@ Follow the steps below to get it running.
 
     ![Server Checker Step 4](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-3.png)
     
-5. Paste the code from [Code.gs](blob/master/Code.gs) in this repo into the Code.gs file in the Script Editor
+5. Paste the code from [Code.gs](Code.gs) in this repo into the Code.gs file in the Script Editor
 
     ![Server Checker Step 5](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-4.png)
     
