@@ -53,5 +53,30 @@ A very simple service to check if your server is up or down and notify you.
 
     ![Server Checker Step 13](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-12.png)
 
+14. Go back to the Sheet tab. You should see some Columns and Sheets
 
+    ![Server Checker Step 14](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-13.png)
+    
+15. Refresh the sheet tab. You should see a new menu with the name you gave your server. Click on it then click 'Run'
 
+    ![Server Checker Step 15](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-14.png)
+
+16. After Run, you should see your first entry. It shows the Date, Status Code and Response Time
+
+    ![Server Checker Step 16](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-15.png)
+    
+17. Click back to Script Editor. If it closed when you refreshed the tab in step 15, click 'Tools -> Script editor...' to re-open. On the Script editor click 'Resources -> Current project's triggers'
+
+    ![Server Checker Step 17](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-16.png)
+    
+18. A dialog will open. Click 'No trigger set up. Click here to here to add on now.'
+
+    ![Server Checker Step 18](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-17.png)
+    
+19. Click the 'Run' dropdown and choose 'fetch'. It will then be set to run ever hour. You can adjust this with the 'Events' dropdowns. Click 'Save'
+
+    ![Server Checker Step 19](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-18.png)
+    
+20. That's it! You are now all set up. It will run as often as you told it to. If the Status Code changes (eg. from 200 to something else) it will email you.
+
+    
