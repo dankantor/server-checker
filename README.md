@@ -27,4 +27,19 @@ A very simple service to check if your server is up or down and notify you.
     
 7. Save the Code.gs file and give it a name
 
-    ![Server Checker Step 6](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-6.png)
+    ![Server Checker Step 7](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-6.png)
+    
+8. Click 'Resources -> Libraries...'
+
+    ![Server Checker Step 8](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-7.png)
+    
+9. In the 'Find a Library' input paste this key: `Mg6pvEB4DVYkHEw0WQhuhRqOFunn5iDS7` then click 'Select'
+    
+    ![Server Checker Step 9](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-8.png)
+    
+10. Click on 'Version' and choose the latest
+
+    ![Server Checker Step 10](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-9.png)
+
+
+
