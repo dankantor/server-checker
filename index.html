@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>Server-checker by dankantor</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Server-checker</h1>
+        <h2>A very simple (and free!) service to check if your server is up or down and notify you.</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/dankantor/server-checker/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/dankantor/server-checker/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/dankantor/server-checker" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="server-checker" class="anchor" href="#server-checker" aria-hidden="true"><span class="octicon octicon-link"></span></a>Server Checker</h1>
+
+<p>A very simple (and free!) service to check if your server is up or down and notify you.</p>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
+
+<p>This is a Google Sheet script that will check a url as often as you'd like and email you if the url is not available. It is great for checking personal websites, API's or really any url you'd like to keep tabs on. </p>
+
+<p>If it receives a status code back from the url that is different from the last time it checked, it will email you. A healthy url should return a status code of 200. If something goes wrong and it returns a 40x or 50x status code, it will email you. Once the server is fixed, and back to returning 200, it will email you again. It will only email you on status code changes, not every time it receives a bad status code. </p>
+
+<p>It will also keep track of response times from the url. It has a chart to show you this over time as well as a daily average sheet with that data.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-19.png" alt="Server Checker Date">
+<img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-20.png" alt="Server Checker Chart">
+<img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-21.png" alt="Server Checker Daily Average"></p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<p>Follow the steps below to get it running.</p>
+
+<ol>
+<li><p>Open up <a href="https://drive.google.com">Drive</a>.</p></li>
+<li>
+<p>Create a New Google Sheet.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-1.png" alt="Server Checker Step 2"></p>
+</li>
+<li>
+<p>Click 'Tools -&gt; Script editor...'.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-2.png" alt="Server Checker Step 3"></p>
+</li>
+<li>
+<p>Create script for 'Blank Project'.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-3.png" alt="Server Checker Step 4"></p>
+</li>
+<li>
+<p>Paste the code from <a href="Code.gs">Code.gs</a> in this repo into the Code.gs file in the Script Editor.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-4.png" alt="Server Checker Step 5"></p>
+</li>
+<li>
+<p>Edit the first 3 lines of the Code.gs file inside the Script Editor to add your server url, a name you'll recognize and the email address you want to be notified at.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-5.png" alt="Server Checker Step 6"></p>
+</li>
+<li>
+<p>Save the Code.gs file and give it a name.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-6.png" alt="Server Checker Step 7"></p>
+</li>
+<li>
+<p>Click 'Resources -&gt; Libraries...'.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-7.png" alt="Server Checker Step 8"></p>
+</li>
+<li>
+<p>In the 'Find a Library' input paste this key: <code>Mg6pvEB4DVYkHEw0WQhuhRqOFunn5iDS7</code> then click 'Select'.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-8.png" alt="Server Checker Step 9"></p>
+</li>
+<li>
+<p>Click on 'Version' and choose the latest. Then click 'Save'.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-9.png" alt="Server Checker Step 10"></p>
+</li>
+<li>
+<p>Click 'Run -&gt; initialize'. This will ask for some permissions then set up the sheet.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-10.png" alt="Server Checker Step 11"></p>
+</li>
+<li>
+<p>A dialog will ask you for Authorization to run. Click 'Continue'.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-11.png" alt="Server Checker Step 12"></p>
+</li>
+<li>
+<p>Another dialog will ask you for permission to access Sheets and Email. Click 'Accept'.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-12.png" alt="Server Checker Step 13"></p>
+</li>
+<li>
+<p>Go back to the Sheet tab. You should see some Columns and Sheets.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-13.png" alt="Server Checker Step 14"></p>
+</li>
+<li>
+<p>Refresh the sheet tab. You should see a new menu with the name you gave your server. Click on it then click 'Run'.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-14.png" alt="Server Checker Step 15"></p>
+</li>
+<li>
+<p>After Run, you should see your first entry. It shows the Date, Status Code and Response Time.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-15.png" alt="Server Checker Step 16"></p>
+</li>
+<li>
+<p>Click back to Script Editor. If it closed when you refreshed the tab in step 15, click 'Tools -&gt; Script editor...' to re-open. On the Script editor click 'Resources -&gt; Current project's triggers'.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-16.png" alt="Server Checker Step 17"></p>
+</li>
+<li>
+<p>A dialog will open. Click 'No triggers set up. Click here to here to add one now.'.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-17.png" alt="Server Checker Step 18"></p>
+</li>
+<li>
+<p>Click the 'Run' dropdown and choose 'fetch'. It will then be set to run ever hour. You can adjust this with the 'Events' dropdowns. Click 'Save'.</p>
+
+<p><img src="https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-18.png" alt="Server Checker Step 19"></p>
+</li>
+<li><p>That's it! You are now all set up. It will run as often as you told it to. If the Status Code changes (eg. from 200 to something else) it will email you.</p></li>
+</ol>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
