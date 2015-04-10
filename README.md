@@ -1,5 +1,5 @@
 # Server Checker
-A very simple service to check if your server is up or down and notify you
+A very simple service to check if your server is up or down and notify you.
 
 ## Setup - Follow these steps:
 
@@ -20,3 +20,7 @@ A very simple service to check if your server is up or down and notify you
 5. Paste the code from Code.gs in this repo into the Code.gs file in the Script Editor
 
     ![Server Checker Step 5](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-4.png)
+    
+6. Edit the Code.gs file inside the Script Editor to add your server url, a name you'll recognize and the email address you want to be notified at
+
+    ![Server Checker Step 6](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-5.png)
