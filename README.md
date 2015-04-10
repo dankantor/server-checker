@@ -21,6 +21,10 @@ A very simple service to check if your server is up or down and notify you.
 
     ![Server Checker Step 5](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-4.png)
     
-6. Edit the Code.gs file inside the Script Editor to add your server url, a name you'll recognize and the email address you want to be notified at
+6. Edit the first 3 lines of the Code.gs file inside the Script Editor to add your server url, a name you'll recognize and the email address you want to be notified at
 
     ![Server Checker Step 6](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-5.png)
+    
+7. Save the Code.gs file and give it a name
+
+    ![Server Checker Step 6](https://raw.githubusercontent.com/dankantor/server-checker/master/screenshots/serverchecker-6.png)
